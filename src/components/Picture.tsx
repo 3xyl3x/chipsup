@@ -10,10 +10,10 @@ const Picture = (props: PictureProps) => {
 	const { countdown } = props;
 
 	return (
-		<div>
+		{/* <div>
 			<p>Countdown: {countdown}</p>
 			<img src={pictureInfo.image} alt="" />
-		</div>
+		</div> */}
 	) 
 };
 
