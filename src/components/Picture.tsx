@@ -1,13 +1,16 @@
-/* import { pictureInfo } from 'picture.json'; */
+/* import { pictureInfo } from 'Snacks.json'; */
 
 interface PictureProps {
 	countdown: number;
+	questionNR: number;
 }
+
 
 
 
 const Picture = (props: PictureProps) => {
 	const { countdown } = props;
+	const { questionNR } = props;
 
 	return (
 		{/* <div>
