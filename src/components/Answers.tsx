@@ -1,3 +1,5 @@
-const Answers = () => {};
+const Answers = () => {
+	return <></>;
+};
 
 export default Answers;
