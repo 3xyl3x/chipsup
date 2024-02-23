@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -10,7 +10,22 @@ import Picture from "./components/Picture";
 function App() {
 	const [questionNR, setQuestion] = useState<number>(0);
 	const [score, setScore] = useState<number>(0);
-	const [countdown, setCountdown] = useState<number>(30);
+	const [countdown, setCountdown] = useState<number>(15);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCountdown((prevCountdown) =>
+				prevCountdown > 0 ? prevCountdown - 1 : 0
+			);
+		}, 1000);
+
+		return () => clearInterval(interval);
+	}, []);
+
+	if (!countdown) {
+		setQuestion((prevQuestionNR) => prevQuestionNR + 1);
+		setCountdown(15);
+	}
 
 	return (
 		<>
@@ -19,7 +34,7 @@ function App() {
 				Poäng: {score}, Fråga nr: {questionNR}
 			</h2>
 			<div className="card col-12 col-md-8 col-xl-6 mx-auto">
-				<Picture countdown={countdown} questionNR={questionNR} />
+				{/*<Picture countdown={countdown} questionNR={questionNR} /> */}
 				<div className="card-body">
 					<Countdown countdown={countdown} />
 					<Description questionNR={questionNR} />
