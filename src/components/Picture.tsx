@@ -7,12 +7,12 @@ interface PictureProps {
 const Picture = (props: PictureProps) => {
 	const { countdown } = props;
 
-	return (
-		<div>
+	return {
+		/* <div>
 			<p>Countdown: {countdown}</p>
 			<img src={pictureInfo.image} alt="" />
-		</div>
-	);
+		</div> */
+	};
 };
 
 export default Picture;
