@@ -27,6 +27,12 @@ function App() {
 		setCountdown(15);
 	}
 
+	const handleAnswerPress = () => {
+		setQuestion((prevQuestionNR) => prevQuestionNR + 1);
+		setScore((prevScore) => prevScore + countdown);
+		setCountdown(15);
+	};
+
 	return (
 		<>
 			<h1 className="text-center">Chips up</h1>
@@ -36,9 +42,12 @@ function App() {
 			<div className="card col-12 col-md-8 col-xl-6 mx-auto">
 				{/*<Picture countdown={countdown} questionNR={questionNR} /> */}
 				<div className="card-body">
-					<Countdown countdown={countdown} />
 					<Description questionNR={questionNR} />
-					<Answers questionNR={questionNR} />
+					<Countdown countdown={countdown} />
+					<Answers
+						questionNR={questionNR}
+						handleAnswerPress={handleAnswerPress}
+					/>
 				</div>
 			</div>
 		</>

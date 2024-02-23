@@ -1,7 +1,8 @@
 const Description = () => {
 	return (
 		<>
-			<p className="card-text"> BLA BLA BLA BLA </p>
+			<h3 className="text-center">Vilken chipsort är det?</h3>
+			<p className="card-text p-2"> BLA BLA BLA BLA </p>
 		</>
 	);
 };
