@@ -35,9 +35,9 @@ function App() {
 
 	return (
 		<>
-			<h1 className="text-center">Chips up</h1>
-			<h2 className="text-center py-2">
-				Poäng: {score}, Fråga nr: {questionNR}
+			<h1 className="text-center bg-warning text-white py-2">Chips up</h1>
+			<h2 className="text-center py-2 my-4">
+				Poäng: <span className="badge bg-success mx-2">{score}</span>
 			</h2>
 			<div className="card border-0 col-12 col-md-8 col-xl-3 mx-auto">
 				<Picture countdown={countdown} questionNR={questionNR} />
