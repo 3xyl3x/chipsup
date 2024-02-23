@@ -17,20 +17,12 @@ function App() {
 			<div className="card col-12 col-md-8 col-xl-6 mx-auto">
 				<Picture countdown={countdown} />
 				<div className="card-body">
-					<p className="card-text">
-						Some quick example text to build on the card title and make up the
-						bulk of the card's content.
-					</p>
-					<ul className="list-group list-group-flush">
-						<li className="list-group-item">An item</li>
-						<li className="list-group-item">A second item</li>
-						<li className="list-group-item">A third item</li>
-					</ul>
+					<Description />
+
+					<Answers />
 				</div>
 			</div>
 			<Countdown countdown={countdown} />
-			<Description />
-			<Answers />
 		</>
 	);
 }
