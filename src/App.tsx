@@ -8,7 +8,7 @@ import Answers from "./components/Answers";
 import Picture from "./components/Picture";
 
 function App() {
-	const [question, setQuestion] = useState<number>(0);
+	const [questionNR, setQuestion] = useState<number>(0);
 	const [score, setScore] = useState<number>(0);
 	const [countdown, setCountdown] = useState<number>(30);
 
@@ -16,14 +16,14 @@ function App() {
 		<>
 			<h1 className="text-center">Chips up</h1>
 			<h2 className="text-center">
-				Poäng: {score}, Fråga nr: {question}
+				Poäng: {score}, Fråga nr: {questionNR}
 			</h2>
 			<div className="card col-12 col-md-8 col-xl-6 mx-auto">
-				<Picture countdown={countdown} question={question} />
+				<Picture countdown={countdown} questionNR={questionNR} />
 				<div className="card-body">
 					<Countdown countdown={countdown} />
-					<Description question={question} />
-					<Answers question={question} />
+					<Description questionNR={questionNR} />
+					<Answers questionNR={questionNR} />
 				</div>
 			</div>
 		</>
