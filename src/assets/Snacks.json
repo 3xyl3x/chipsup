@@ -1,29 +1,42 @@
-Vickningchips  Räfflad, lätt saltad, kraftfull och spröd
-
-Hjärtan Ost & Lök 
-Form och ikonisk smakkombination
-
-Chili CreamCheese
-Hetta, Ost, intensiv smak 
-
-Dillchips
-Ört, frisksyrlig smak, aromatisk doft  
-
-Sombrero 
-Kryddig, Majs, Fest, tjusig hatt 
-
-Estrella Cheddar 
-krämig, ostig, fyllig 
- Estrella Paprika
-sötaktig, rökig, kryddstark 
-
-Grilled Glazed Ribs 
-rökig, söt, köttig 
-
-Västkustchips lök 
-Skarp, Söt, Krispig, Westcoast rep
- Sourcream and onion 
-Gräddig, Lökig, skarp 
-
-
-
+[
+    {
+      "name": "Vickningchips",
+      "description": "Räfflad, lätt saltad, kraftfull och spröd"
+    },
+    {
+      "name": "Hjärtan Ost & Lök",
+      "description": "Form och ikonisk smakkombination"
+    },
+    {
+      "name": "Chili CreamCheese",
+      "description": "Hetta, Ost, intensiv smak"
+    },
+    {
+      "name": "Dillchips",
+      "description": "Ört, frisksyrlig smak, aromatisk doft"
+    },
+    {
+      "name": "Sombrero",
+      "description": "Kryddig, Majs, Fest, tjusig hatt"
+    },
+    {
+      "name": "Estrella Cheddar",
+      "description": "Krämig, ostig, fyllig"
+    },
+    {
+      "name": "Estrella Paprika",
+      "description": "Sötaktig, rökig, kryddstark"
+    },
+    {
+      "name": "Grilled Glazed Ribs",
+      "description": "Rökig, söt, köttig"
+    },
+    {
+      "name": "Västkustchips lök",
+      "description": "Skarp, Söt, Krispig, Westcoast rep"
+    },
+    {
+      "name": "Sourcream and onion",
+      "description": "Gräddig, Lökig, skarp"
+    }
+  ]
