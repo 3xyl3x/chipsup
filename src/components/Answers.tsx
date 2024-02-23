@@ -13,7 +13,7 @@ const Answers = (props: AnswersProps) => {
 						className="btn btn-primary d-block w-100"
 						onClick={handleAnswerPress}
 					>
-						1 ANSWER 1
+						Svarsalternativ 1
 					</button>
 				</li>
 				<li className="list-group-item">
@@ -21,7 +21,7 @@ const Answers = (props: AnswersProps) => {
 						className="btn btn-info  d-block w-100"
 						onClick={handleAnswerPress}
 					>
-						x ANSWER x
+						Svarsalternativ 2
 					</button>
 				</li>
 				<li className="list-group-item">
@@ -29,7 +29,7 @@ const Answers = (props: AnswersProps) => {
 						className="btn btn-warning  d-block w-100"
 						onClick={handleAnswerPress}
 					>
-						2 ANSWER 2
+						Svarsalternativ 3
 					</button>
 				</li>
 			</ul>
