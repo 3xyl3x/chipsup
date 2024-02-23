@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import Countdown from "./components/Countdown";
 import Description from "./components/Description";
 import Answers from "./components/Answers";
@@ -12,10 +14,15 @@ function App() {
 	return (
 		<>
 			<h1>Chips up</h1>
-			<Picture countdown={countdown} />
+			<div className="card col-12 col-md-8 col-xl-6 mx-auto">
+				<Picture countdown={countdown} />
+				<div className="card-body">
+					<Description />
+
+					<Answers />
+				</div>
+			</div>
 			<Countdown countdown={countdown} />
-			<Description />
-			<Answers />
 		</>
 	);
 }
