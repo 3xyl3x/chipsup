@@ -8,9 +8,9 @@ import Answers from "./components/Answers";
 import Picture from "./components/Picture";
 
 function App() {
-	const [question, setQuestion] = useState(0);
-	const [score, setScore] = useState(0);
-	const [countdown, setCountdown] = useState(30);
+	const [question, setQuestion] = useState<number>(0);
+	const [score, setScore] = useState<number>(0);
+	const [countdown, setCountdown] = useState<number>(30);
 
 	return (
 		<>
