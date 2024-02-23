@@ -36,11 +36,11 @@ function App() {
 	return (
 		<>
 			<h1 className="text-center">Chips up</h1>
-			<h2 className="text-center">
+			<h2 className="text-center py-2">
 				Poäng: {score}, Fråga nr: {questionNR}
 			</h2>
-			<div className="card col-12 col-md-8 col-xl-6 mx-auto">
-				{/*<Picture countdown={countdown} questionNR={questionNR} /> */}
+			<div className="card border-0 col-12 col-md-8 col-xl-3 mx-auto">
+				<Picture countdown={countdown} questionNR={questionNR} />
 				<div className="card-body">
 					<Description questionNR={questionNR} />
 					<Countdown countdown={countdown} />

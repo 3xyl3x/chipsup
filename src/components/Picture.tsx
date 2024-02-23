@@ -17,13 +17,15 @@ const Picture = (props: PictureProps) => {
 	const selectedSnack: ISnack | undefined = snackData[questionNR];
 
 	return (
-		<div>
-			<p>Countdown: {countdown}</p>
+		<div className="text-center">
 			{selectedSnack && (
 				<>
-					<h3>{selectedSnack.name}</h3>
-					<p>{selectedSnack.description}</p>
-					<img src={selectedSnack.image} alt={selectedSnack.name} />
+					<img
+						src={"src/assets/img/" + selectedSnack.image}
+						alt={selectedSnack.name}
+						style={{ filter: `blur(${countdown / 2 + 5}px)` }}
+						className="w-50 "
+					/>
 				</>
 			)}
 		</div>
