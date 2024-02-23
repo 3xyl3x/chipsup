@@ -23,7 +23,7 @@ const Picture = (props: PictureProps) => {
 					<img
 						src={"src/assets/img/" + selectedSnack.image}
 						alt={selectedSnack.name}
-						style={{ filter: `blur(${countdown / 2 + 5}px)` }}
+						style={{ filter: `blur(${countdown / 1.5 + 3}px)` }}
 						className="w-50 "
 					/>
 				</>
