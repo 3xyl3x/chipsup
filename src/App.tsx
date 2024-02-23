@@ -8,21 +8,24 @@ import Answers from "./components/Answers";
 import Picture from "./components/Picture";
 
 function App() {
+	const [question, setQuestion] = useState(0);
 	const [score, setScore] = useState(0);
 	const [countdown, setCountdown] = useState(30);
 
 	return (
 		<>
-			<h1>Chips up</h1>
+			<h1 className="text-center">Chips up</h1>
+			<h2 className="text-center">
+				Poäng: {score}, Fråga nr: {question}
+			</h2>
 			<div className="card col-12 col-md-8 col-xl-6 mx-auto">
-				<Picture countdown={countdown} />
+				<Picture countdown={countdown} question={question} />
 				<div className="card-body">
-					<Description />
-
-					<Answers />
+					<Countdown countdown={countdown} />
+					<Description question={question} />
+					<Answers question={question} />
 				</div>
 			</div>
-			<Countdown countdown={countdown} />
 		</>
 	);
 }
