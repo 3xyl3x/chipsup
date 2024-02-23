@@ -1,17 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Countdown from "./components/Countdown";
+import Description from "./components/Description";
 
 function App() {
-  const [count, setCount] = useState(0)
+	const [score, setScore] = useState(0);
+	const [countdown, setCountdown] = useState(30);
 
-  return (
-    <>
-  <h1>Chips up</h1> 
-  
-    </>
-  )
+	return (
+		<>
+			<h1>Chips up</h1>
+			<Picture countdown={countdown} />
+			<Countdown countdown={countdown} />
+			<Description />
+			<Answers />
+		</>
+	);
 }
 
-export default App
+export default App;
