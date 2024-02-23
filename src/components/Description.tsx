@@ -1,3 +1,5 @@
-const Description = () => {};
+const Description = () => {
+	return <></>;
+};
 
 export default Description;
